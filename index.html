@@ -10,5 +10,7 @@ This is the best story ever!
 {% endblock pubdate %}
 
 {% block content %}
-content
+  {% for obj in harvard_park_homicides %}
+  {{ obj.first_name }} {{ obj.last_name }}<br>
+  {% endfor %}
 {% endblock content %}
